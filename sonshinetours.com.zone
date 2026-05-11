@@ -1,0 +1,15 @@
+; sonshinetours.com - Cloudflare DNS zone file
+; Import via Cloudflare Dashboard > DNS > Records > Import DNS Records
+; After import: set all records to DNS Only (gray cloud)
+
+$ORIGIN sonshinetours.com.
+$TTL 300
+
+; GitHub Pages - apex domain
+@    IN  A      185.199.108.153
+@    IN  A      185.199.109.153
+@    IN  A      185.199.110.153
+@    IN  A      185.199.111.153
+
+; GitHub Pages - www
+www  IN  CNAME  funkyfresh67.github.io.
